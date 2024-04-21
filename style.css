@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #008f7a;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#drum-machine {
+  width: 40rem;
+  background-color: #4d8076;
+  border: 5px solid #ff8066;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+}
+#controls {
+  width: 100%;
+  padding-block: 2rem;
+}
+
+@media (max-width: 650px) {
+  #drum-machine {
+    flex-direction: column;
+    align-items: center;
+    width: min(18rem, 80%);
+    padding-block: 1rem 0rem;
+    padding-inline: 1rem;
+  }
+
+  #controls {
+    width: fit-content;
+    padding-block: 0rem 1rem;
+  }
+}

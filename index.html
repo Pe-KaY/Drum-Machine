@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <div id="drum-machine">
+      <!-- Drumum Grid -->
+      <div id="drum-Grid">
+        <div class="drum-pad">
+          <h1>Q</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+            class="clip"
+            id="Q"
+            beat="Heater 1"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>W</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
+            class="clip"
+            id="W"
+            beat="Heater 2"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>E</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
+            class="clip"
+            id="E"
+            beat="Heater 3"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>A</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+            class="clip"
+            id="A"
+            beat="Heater 4"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>S</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+            class="clip"
+            id="S"
+            beat="Clap"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>D</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+            class="clip"
+            id="D"
+            beat="Open-HH"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>Z</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+            class="clip"
+            id="Z"
+            beat="Kick-n'-Hat"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>X</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+            class="clip"
+            id="X"
+            beat="Kick"
+          ></audio>
+        </div>
+        <div class="drum-pad">
+          <h1>C</h1>
+          <audio
+            src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+            class="clip"
+            id="C"
+            beat="Closed-HH"
+          ></audio>
+        </div>
+      </div>
+      <!-- drum Grid Ends here -->
+
+      <!-- Controls start here -->
+      <div id="controls">
+        <div id="power">
+          <h1>Power</h1>
+          <div><span></span><span></span></div>
+        </div>
+        <div id="display"></div>
+        <div id="range">
+          <input
+            type="range"
+            id="range-slider"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.3"
+          />
+        </div>
+        <div id="volume"></div>
+      </div>
+      <!-- constrols ends here -->
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

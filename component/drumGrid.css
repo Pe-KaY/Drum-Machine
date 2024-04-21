@@ -1,0 +1,52 @@
+#drum-Grid {
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 1rem;
+}
+
+.drum-pad {
+  background-color: #b0a8b9;
+  box-shadow: 4px 4px 5px black;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: black;
+}
+h1 {
+  font-size: 1rem;
+  user-select: none;
+}
+
+.drum-pad[clicked] {
+  background-color: #ff8066;
+}
+.drum-pad[clicked] > h1 {
+  transform: translate3d(0, 0.1rem, 0);
+}
+
+.drum-pad[no-sound] {
+  background-color: #b0a8b9;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+.drum-pad[no-sound] > h1 {
+  transform: translate3d(0, 0.1rem, 0);
+}
+
+@media (max-width: 650px) {
+  #drum-Grid {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 4.5rem);
+    gap: 0.5rem;
+  }
+  .drum-pad {
+    height: 4rem;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+}
